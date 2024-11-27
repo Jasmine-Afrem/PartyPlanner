@@ -1,0 +1,45 @@
+.welcome-container {
+    position: relative; /* Positioning context for the canvas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Keep content centered */
+    min-height: 100vh;
+    text-align: center;
+    color: black; /* Change this as needed */
+}
+
+canvas {
+    position: absolute; /* Positioning it to cover the entire screen */
+    top: 0;
+    left: -100px; /* Shift the canvas left by 100 pixels (adjust as needed) */
+    width: calc(100vw + 100px); /* Adjust width to cover the canvas shift */
+    height: 100vh; /* Set canvas height to 100% of the viewport height */
+    z-index: -1; /* Ensure canvas is behind other elements */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: black; /* Change color for better visibility */
+}
+
+p {
+    font-size: 1.2em;
+    color: black; /* Change color for better visibility */
+    margin-bottom: 20px;
+}
+
+.get-started-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #c548f7; /* Your desired button color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+    background-color: #f58ef5; /* Hover effect color */
+}

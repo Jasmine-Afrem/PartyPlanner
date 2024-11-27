@@ -1,0 +1,185 @@
+/* src/PartyPlanner.css */
+
+.party-planner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    min-height: 100vh;
+    padding: 20px; /* Added padding around container */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.party-box {
+    background-color: #fff; /* White background for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the box */
+    max-width: 700px; /* Increase max width for the box */
+    width: 100%; /* Full width for responsiveness */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the main party box */
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 1.8em; /* Adjust size */
+    margin-bottom: 10px; /* Space below heading */
+    color: black; /* Black color for visibility */
+}
+
+p {
+    font-size: 1.2em; /* Adjust paragraph size */
+    margin: 10px 0; /* Space above and below */
+    color: gray; /* Change color for better visibility */
+}
+
+.menu {
+    display: flex; /* Align buttons in a row */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+.menu-button {
+    padding: 10px; /* Button padding */
+    font-size: 1em; /* Button text size */
+    color: #fff; /* Button text color */
+    background-color: #c548f7; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    width: 100%; /* Full width for buttons */
+}
+
+.menu-button:hover {
+    background-color: #f58ef5; /* Change color on hover */
+}
+
+.events-box {
+    background-color: #fff; /* White background for events box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for box */
+    padding: 30px; /* Increased padding for a larger look */
+    max-width: 700px; /* Increase max width to match party box */
+    width: 100%; /* Full width for responsiveness */
+    margin-top: 20px; /* Space between party box and events box */
+    min-height: 300px; /* Set a minimum height to ensure it appears larger */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition for height and opacity */
+    overflow: hidden; /* Hide overflow for smooth transition */
+}
+
+.events-box h2 {
+    font-size: 1.6em; /* Title font size */
+    margin-bottom: 15px; /* Space below heading */
+    color: black; /* Black color for visibility */
+}
+
+.events-list {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.event-item {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Space between event name and button */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding for each event item */
+    background-color: #f5f5f5; /* Light background color */
+    margin-bottom: 10px; /* Space between event items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each event item */
+    transition: transform 0.2s ease; /* Smooth transition for item removal */
+}
+
+.edit-button {
+    padding: 4px 7px; /* Further reduced padding for a smaller button */
+    font-size: 0.7em; /* Smaller font size for the edit button */
+    color: white; /* Text color */
+    background-color: #c548f7; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    width: auto; /* Allow width to adjust based on content */
+    min-width: 50px; /* Set a minimum width */
+}
+
+.edit-button:hover {
+    background-color: #f58ef5; /* Change color on hover */
+}
+
+.no-events-message {
+    color: #888; /* Gray color for no events message */
+    font-size: 1.1em; /* Adjust font size */
+    text-align: center; /* Center-align text */
+    padding: 10px 0; /* Padding around message */
+}
+
+.event-buttons {
+    display: flex; /* Use flexbox to arrange buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red color for delete button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    padding: 5px 10px; /* Padding for button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.delete-button:hover {
+    background-color: #942316; /* Darker red on hover */
+}
+
+.fade-out {
+    opacity: 0; /* Fade out effect */
+    transform: scale(0.95); /* Slightly shrink the item */
+}

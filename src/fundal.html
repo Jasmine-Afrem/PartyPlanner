@@ -1,0 +1,11 @@
+<script>
+    let position = 0;
+
+    function animateBackground() {
+        position += 1; 
+        document.querySelector('.background').style.backgroundPosition = `${position}px 0`;
+        requestAnimationFrame(animateBackground);
+    }
+
+    animateBackground();
+</script>

@@ -1,0 +1,59 @@
+/* src/StartPlanning.css */
+
+.start-planning-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full height */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Padding around the container */
+}
+
+.event-form {
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 80px; /* Increased padding inside the form */
+    max-width: 1200px; /* Increased max width for the form */
+    width: 100%; /* Make the form responsive */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 20px; /* Space between form elements */
+}
+
+label {
+    margin-bottom: 8px; /* Space below each label */
+    font-weight: bold; /* Bold font for labels */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 15px; /* Increased padding inside the input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    width: 100%; /* Full width for input fields */
+}
+
+textarea {
+    height: 300px; /* Height for description field */
+    resize: none; /* Disable resizing */
+}
+
+.submit-button {
+    padding: 15px; /* Consistent padding for the button */
+    background-color: #c548f7; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    width: 100%; 
+    margin-left: 15px;/* Make the button full width */
+}
+
+.submit-button:hover {
+    background-color: #f58ef5; /* Change color on hover */
+}
