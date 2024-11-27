@@ -26,6 +26,15 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/party-planner.git
+2. Navigate to the project directory:
+   ```bash
+   cd party-planner
+3. Install dependencies:
+   ```bash
+   npm install
+4. Run the app:
+   ```bash
+   npm start
 
 ## 🎨 How It Works
 
